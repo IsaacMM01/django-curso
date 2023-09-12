@@ -1,0 +1,31 @@
+{% extends "mi_nav_bar.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    {% load static %}
+</head>
+<body>
+    <div class="login_box">
+        <img src="{% static 'ingenieria.png' %}" alt="logo de ingenieria">
+        <h1>Login Here</h1>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username">
+
+            <label for="password">password</label>
+            <input type="text" placeholder="Enter Password">
+
+            <input type="submit" value="Login In">
+            <a href="#">Lost your password</a>
+            <a href="#">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}
