@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MiCurso.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/mares/Documents/GitHub/django-curso/MiCurso/news/templates",],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
