@@ -120,6 +120,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     "C:/Users/mares/Documents/GitHub/django-curso/MiCurso/news/static",
+    "C:/Users/mares/Documents/GitHub/django-curso/MiCurso/news/styles",
 ]
 
 # Default primary key field type
