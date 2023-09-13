@@ -6,3 +6,5 @@ def index(request):
     return render(request, "mi_nav_bar.html")
 def login(request):
     return render (request, "my_login.html")
+def signUp(request):
+    return render(request, "signUp.html")
