@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'register.css' %}" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com//ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="conteiner">
+        <input type="checkbox" id = "flip">
+        <!--<div class="cover"></div>\-->
+        <form action="#">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class = "text"><label for="flip">Forgot password?</label></div>
+                        <div class="button input-box">
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="text">Don't have an account? <a href="../signUp">Sign Up</a></div>
+                    </div>
+                </div>
+                <div class="forgot">
+                    <div class="title">Forgot your password?</div>
+                    <div class="text"> We'll send you a code to confirm this account is yours</div>
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="button input-box">
+                            <input type="submit" value="Continue">
+                        </div>
+                        <div class="text"><label for="flip">Back</label></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
