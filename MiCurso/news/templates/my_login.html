@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="{% static 'login.css' %}" type="text/css"/>
 </head>
 <body>
+    <div class="login_box_left">
+        <img class = "login_imagen" src="{% static 'login/login.jpg' %}" alt="login_image">
+    </div>
     <div class="login_box">
         <img class = "avatar" src="{% static 'ingenieria.png' %}" alt="logo de ingenieria">
         <h1>Login Here</h1>
@@ -17,10 +20,12 @@
             <input type="text" placeholder="Enter Username">
 
             <label for="password">password</label>
-            <input type="text" placeholder="Enter Password">
+            <input type="password" placeholder="Enter Password">
 
-            <input type="submit" value="Login In">
+            <button type = "sumbmit">Login In</button>
+            <br>
             <a href="#">Lost your password</a>
+            <br>
             <a href="#">Don't have an account?</a>
         </form>
     </div>

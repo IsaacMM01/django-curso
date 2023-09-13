@@ -10,10 +10,10 @@ body {
 .login_box{
     width: 420px;
     height: 420px;
-    background: #000;
+    background: #59d8da;
     color: #fff;
     top: 50%;
-    left: 50%;
+    left: 65%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
@@ -54,17 +54,42 @@ body {
     color: #fff;
     font-size: 16px;
 }
-.login_box input[type = "submit"]{
+.login_box button{
+    width: 60%;
     border: none;
     outline: none;
     height: 40px;
-    background: #b80f22;
+    background: #f00420;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
+}
+.login_box button:hover{
+    background-color: #b80f23b3;
 }
 .login_box a{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
+    color: darkgrey;
+}
+.login_box a:hover{
+    color: blue;
+}
+.login_box_left{
+    width: 500px;
+    height: 420px;
+    background: white;
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    margin: 0;
+}
+.login_box_left .login_imagen{
+    width: 500px;
+    height: 420px;
+    position: absolute;
+    margin: 0;
 }
