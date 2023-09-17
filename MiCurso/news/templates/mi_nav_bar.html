@@ -53,6 +53,28 @@
         </div>
       </nav>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <div id="mymap">
+      </div>
+      <script>
+          if(navigator.geolocation){
+              navigator.geolocation.getCurrentPosition(success, error, options);
+          }
+          else{
+              alert("No puedes obtener la geolocalizacion");
+          }
+          var options = {
+              EnableHighAccuracy:true,
+              Timeout: 500,
+              MaximunAge: 0 
+          }
+          function success(GeolocationPosition) {
+              let coords = GeolocationPosition.coords;
+              document.getElementById("mymap").innerHTML = "latitud: "+ coords.latitude + "<br>" + "Longitud: " + coords.longitude;
+          }
+          function error(err){
+              document.getElementById("mymap").innerHTML = err.message;
+          }
+      </script>
 </body>
 </html>
 {% block content %}
