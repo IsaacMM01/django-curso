@@ -17,4 +17,12 @@ class Choice(models.Model):
     votes = models.IntegerField(default = 0)
     def __str__(self):
         return self.choice_text
+class User(models.Model):
+    full_name = models.CharField(max_length=50)
+    user_name = models.CharField(max_length=40)
+    email = models.EmailField(max_length=100)
+    phone_number = models.SmallIntegerField(max_length=10)
+    password = models.CharField(max_length=20)
+    confirm_password = models.CharField(max_length=20)
+
 
